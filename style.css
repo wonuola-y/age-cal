@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+form {
+  display: flex;
+  flex-direction: column;
+
+  width: 90%;
+  /* border: 2px solid blue; */
+  padding: 0.5em;
+  padding-top: 1.5em;
+}
+.container {
+  background-color: hsl(0, 0%, 94%);
+  border: 2px solid yellow;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-container {
+  background: white;
+  display: flex;
+  width: 90%;
+  max-width: 600px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+  border-bottom-right-radius: 120px;
+}
+label {
+  color: hsl(0, 1%, 44%);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.25em;
+}
+i {
+  font-style: italic;
+  font-size: 45px;
+  font-weight: 800;
+}
+span {
+  color: hsl(259, 100%, 65%);
+}
+button {
+  border: none;
+  background: none;
+}
+
+img {
+  border: none;
+  border-radius: 50px;
+  background: hsl(259, 100%, 65%);
+  width: 42px;
+  padding: 0.75em;
+}
+.rule {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+hr {
+  width: 100%;
+}
+.form-holder {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+.form-holder > div {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  flex-direction: column;
+}
+input {
+  padding: 0.25em;
+  margin: 0.3em 0;
+  width: 75%;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.cal-results {
+  padding: 0.5em;
+  width: 90%;
+  position: relative;
+  top: -17px;
+}
+
+small {
+  visibility: hidden;
+  color: red;
+  font-style: italic;
+}
+
+@media screen and (max-width: 750px) {
+  .form-holder {
+    width: 100%;
+  }
+  input {
+    width: 85%;
+  }
+  form {
+    padding: 1em;
+    padding-top: 1.5em;
+    width: 100%;
+  }
+  .rule {
+    margin: 2em 0;
+    flex-direction: row;
+  }
+  button {
+    position: absolute;
+  }
+}
+.error {
+  border: 1px solid red;
+  color: red;
+  visibility: visible;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="form-container">
+          <form>
+            <div class="form-holder">
+              <div>
+                <label for="Day" class="label-Day"> Day</label>
+                <input type="number" class="days" placeholder="DD" />
+                <small class="error-day"></small>
+              </div>
+              <div>
+                <label for="  Month" class="label-Month"> Month</label>
+                <input type="number" placeholder="MM" class="months" />
+                <small class="error-month"></small>
+              </div>
+              <div>
+                <label for="Year" class="label-Year"> Year</label>
+                <input type="number" placeholder="YYYY" class="years" />
+                <small class="error-year"></small>
+              </div>
+            </div>
+
+            <div class="rule">
+              <hr />
+              <button type="submit" id="submit">
+                <img src="./assets/images/icon-arrow.svg" alt="Arrow" />
+              </button>
+            </div>
+          </form>
+
+          <div class="cal-results">
+            <i><span class="results-years">--</span> years</i><br />
+
+            <i><span class="results-months">--</span> months</i><br />
+
+            <i><span class="results-days">--</span> days </i><br />
+          </div>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </main>
+  </body>
+  <script src="index.js"></script>
+</html>
